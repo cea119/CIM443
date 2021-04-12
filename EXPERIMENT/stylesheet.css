@@ -3,28 +3,13 @@ body{
     padding: 2rem;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-
-  .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    height:100%;
-  }
   .loader-wrapper {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #242f3f;
+    background-color: #C7CEEA;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -70,6 +55,8 @@ body{
     letter-spacing: 0.3ch;
     background: #ffffff;
     position: relative;
+
+  }
     
     &::before {
         content: '';
