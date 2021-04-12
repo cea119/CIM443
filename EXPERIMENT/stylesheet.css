@@ -1,6 +1,17 @@
 body{
-    background:white;
+    background: #C7CEEA;
     padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#name{
+    text-align: left; 
+    height:150px; 
+    padding: 0em; 
+}
+
+.photo{
+    height: 200px;
 }
 
   .loader-wrapper {
@@ -54,7 +65,7 @@ body{
     text-transform: uppercase;
     letter-spacing: 0.3ch;
     background: #ffffff;
-    position: relative;
+    position: center;
 
   }
     
