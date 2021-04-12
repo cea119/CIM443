@@ -4,59 +4,35 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta  http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <script src="jquery-2.1.4.js"></script>
   <link href="/Users/corinaazpurua/Documents/GitHub/CIM443/EXPERIMENT/stylesheet.css" rel="stylesheet" type= "text/css">
 </head>
 
-<div class="loader"></div> 
+<body>
+    <div class="sketchy">
 
-<div class="sketchy">
-
-<h3>CORINA AZPURUA</h3>
-<h4>The fear of being average keeps me up at night. Check out some of my work!</h4>
-
-<div class= "carousel">
-    <button class="carousel__button--left">
+    <div class="content">
+        
+        <h3>CORINA AZPURUA</h3>
+        <h4>The fear of being average keeps me up at night. Check out some of my work!</h4>
+        
         <img src='https://i.postimg.cc/W4bVqMRm/Untitled-7-01.png' alt='Untitled-7-01' class= "center"/>
-    </button>
-    <div class= "carousel__track-container"> </div>
-<ul class= "carousel__track">
-    <li class= "carousel__slide"> 
-        <img src='https://i.postimg.cc/W4bVqMRm/Untitled-7-01.png' alt='Untitled-7-01' class= "center"/>
-    </li>
-
-    <li class= "carousel__slide"> 
         <img src='https://i.postimg.cc/7YDWLqr0/Untitled-7-02.png'  alt='Untitled-7-02' class= "center"/>
-
-    </li>
-    <li class= "carousel__slide">
         <img src='https://i.postimg.cc/YS4XP9QK/Untitled-7-03.png'  alt='Untitled-7-03' class= "center"/>
-    </li>
-</ul>
 
-    <button class="carousel__button--right">
-        <img src='https://i.postimg.cc/W4bVqMRm/Untitled-7-01.png' alt='Untitled-7-01' class= "center"/>
-    </button>
+      </div>
 
-<div class= "carousel__nav"> 
-    <button class= "carousel__indicator"> </button>
-    <button class= "carousel__indicator"> </button>
-    <button class= "carousel__indicator"> </button>
-</div>
-
+      <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+      <script>
+          $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+          });
+      </script>
 
 </div>
-
-
-<img src='https://i.postimg.cc/W4bVqMRm/Untitled-7-01.png' alt='Untitled-7-01' class= "center"/>
-<img src='https://i.postimg.cc/7YDWLqr0/Untitled-7-02.png'  alt='Untitled-7-02' class= "center"/>
-<img src='https://i.postimg.cc/YS4XP9QK/Untitled-7-03.png'  alt='Untitled-7-03' class= "center"/>
-
-
-</div>
-
-
-
-   
+ 
 </body>
 </html>
