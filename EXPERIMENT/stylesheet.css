@@ -3,6 +3,7 @@ body{
     padding: 2rem;
     font-family: "Muli", sans-serif;
     size: 20pt; 
+    text-transform: lowecase;
 }
 
 #name{
@@ -107,8 +108,8 @@ body{
       font-family: 'Muli';
       position: relative;
       height: 169px;	
-      width: 370px;
-      max-width: calc(100% - 10px);
+      width: 400px;
+      max-width: calc(300% - 10px);
     }
     
     .social-panel button.close-btn {
@@ -232,4 +233,16 @@ body{
       text-decoration: none;
     }
     
+    @media screen and (max-width: 480px) {
     
+      .social-panel-container.visible {
+        transform: translateX(0px);
+      }
+      
+      .floating-btn {
+        right: 10px;
+      }
+    }    
+ .social{
+   font-size: 10px;
+ }   
