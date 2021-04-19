@@ -2,6 +2,9 @@ body{
     background: #C7CEEA;
     padding: 2rem;
     font-family: 'Montserrat', sans-serif;
+    size: 20pt; 
+
+    
 }
 
 #name{
@@ -65,7 +68,7 @@ body{
     text-transform: uppercase;
     letter-spacing: 0.3ch;
     background: #ffffff;
-    position: center;
+    position: relative;
 
   }
     
