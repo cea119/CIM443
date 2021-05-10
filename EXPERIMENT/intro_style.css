@@ -3,7 +3,8 @@ body{
     padding: 2rem;
     font-family: "Muli", sans-serif;
     size: 20pt; 
-    text-transform: lowercase;
+    margin-left: 300px;
+    margin-right: 300px; 
 }
 
 #name{
@@ -12,3 +13,18 @@ body{
     padding: 0em; 
 }
 
+
+h1{
+font-size: 30px; 
+text-align: center;
+}
+
+img{
+    width: auto;
+    height: auto;
+    align-items: center;
+}
+
+h2{
+    font-size: 20px;  
+}
