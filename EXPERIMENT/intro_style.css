@@ -1,0 +1,14 @@
+body{
+    background:white;
+    padding: 2rem;
+    font-family: "Muli", sans-serif;
+    size: 20pt; 
+    text-transform: lowercase;
+}
+
+#name{
+    text-align: left; 
+    height:60px; 
+    padding: 0em; 
+}
+

@@ -12,6 +12,10 @@ body{
     padding: 0em; 
 }
 
+.work{
+  text-align: center;
+}
+
   .loader-wrapper {
     width: 100%;
     height: 100%;
@@ -64,23 +68,8 @@ body{
     background: #ffffff;
     position: center;
     font-size: 15px;
-
-
-  }
+ }
     
-    &::before {
-        content: '';
-        border: 2px solid #353535;
-        display: block;
-        width: 80%;
-        height: 80%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
-        border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
-    }
-
     .social-panel-container {
       position: fixed;
       right: 0;
@@ -188,10 +177,9 @@ body{
     
     .floating-btn {
       border-radius: 26.5px;
-      background-color: #001F61;
       border: 1px solid #001F61;
       box-shadow: 0 16px 22px -17px #03153B;
-      color: #fff;
+      color: #03153B;
       cursor: pointer;
       font-size: 16px;
       line-height: 20px;
@@ -203,8 +191,8 @@ body{
     }
     
     .floating-btn:hover {
-      background-color: #ffffff;
-      color: #001F61;
+      background-color: #8cc2ff;
+      color: white;
     }
     
     .floating-btn:focus {
