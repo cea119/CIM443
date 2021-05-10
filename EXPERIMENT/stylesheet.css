@@ -3,12 +3,12 @@ body{
     padding: 2rem;
     font-family: "Muli", sans-serif;
     size: 20pt; 
-    text-transform: lowecase;
+    text-transform: lowercase;
 }
 
 #name{
     text-align: left; 
-    height:150px; 
+    height:60px; 
     padding: 0em; 
 }
 
@@ -64,10 +64,10 @@ body{
     border: 3px solid #C7CEEA;
     font-size: 1rem;
     border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
-    text-transform: uppercase;
     letter-spacing: 0.3ch;
     background: #ffffff;
     position: relative;
+    font-size: 15px;
 
   }
     
