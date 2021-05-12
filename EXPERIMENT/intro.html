@@ -8,18 +8,18 @@
     <script src="jquery-2.1.4.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-    <link href="/Users/corinaazpurua/Documents/GitHub/CIM443/EXPERIMENT/intro_style.css" rel="stylesheet" type= "text/css">
+    <link href="./intro_style.css" rel="stylesheet" type= "text/css">
     <title>my portfolio</title>
 </head>
 
 <div class="sketchy">
-    <a href='/Users/corinaazpurua/Documents/GitHub/CIM443/EXPERIMENT/landing.html' target='_blank'> <img id= "name" src='https://i.postimg.cc/JnjmnGWj/Screen-Shot-2021-05-10-at-5-30-57-PM.png' alt='Screen-Shot-2021-05-10-at-5-30-57-PM'/> </a>
+    <a href='./landing.html' target='_blank'> <img id= "name" src='https://i.postimg.cc/JnjmnGWj/Screen-Shot-2021-05-10-at-5-30-57-PM.png' alt='Screen-Shot-2021-05-10-at-5-30-57-PM'/> </a>
 <body>
 
     <div class="topnav-right">
-        <a href="/Users/corinaazpurua/Documents/GitHub/CIM443/EXPERIMENT/mywork.html">My Work // </a>
-        <a href="/Users/corinaazpurua/Documents/GitHub/CIM443/EXPERIMENT/buki.html">BukiLove // </a>
-        <a href="file:///Users/corinaazpurua/Downloads/AzpuruaCorina_Resume/625650a4-b2c1-11eb-8b25-0cc47a792c0a_id_625650a4-b2c1-11eb-8b25-0cc47a792c0a.html">My Resume</a>
+        <a href="./mywork.html">My Work // </a>
+        <a href="./buki.html">BukiLove // </a>
+        <a href="https://azpuruacorina.wixsite.com/myportfolio/resume-1">My Resume</a>
       </div>
 
 
@@ -39,34 +39,71 @@
          <div class="grid-container">
             <a href='/Users/corinaazpurua/Documents/GitHub/CIM443/EXPERIMENT/mywork.html' target='_blank'><img src='https://i.postimg.cc/FR5gGvny/work1.png' alt='work1'/></a>
             <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/8z7RSc2d/BUKI1.png' alt='BUKI1'/></a>
-            <a href='file:///Users/corinaazpurua/Downloads/AzpuruaCorina_Resume/625650a4-b2c1-11eb-8b25-0cc47a792c0a_id_625650a4-b2c1-11eb-8b25-0cc47a792c0a.html' target='_blank'><img src='https://i.postimg.cc/g21vkdpC/RESUME1.png' alt='RESUME1'/></a>
+            <a href='https://azpuruacorina.wixsite.com/myportfolio/resume-1' target='_blank'><img src='https://i.postimg.cc/g21vkdpC/RESUME1.png' alt='RESUME1'/></a>
          </div>
+
+         <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+          </div>
+          <div>
+    
+            <div class="social-panel-container">
+              <div class="social-panel">
+                <p>Created with <i class="fa fa-heart"></i> by
+                  <a target="_blank" href="https://florin-pop.com">Corina Azpurua</a></p>
+                <button class="close-btn"><i class="fas fa-times"></i></button>
+                <h4>Get in touch on</h4>
+                <ul>
+                  <li>
+                <p>Corina's contact info</p>
+                  <li>
+                    <a href="https://www.instagram.com/cocoazpu/" target="_blank"> <i class="social"></i>
+                    Instagram
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="floating-btn">
+              Get in Touch
+            </button>
 
         </body>
 
-<script>
-    $(window).on("load",function(){
-$(".loader-wrapper").fadeOut("slow");
-});
-
-const text = document.getElementById("text");
-const prog = "hi, it's nice to see ya!";
-let idx = 1;
-
-setInterval(writeText, 100);
-
-function writeText() {
-text.innerText = prog.slice(0, idx)
-
-idx++;
-
-if(idx > prog.length){
- idx = 1;
-}
-
-}
-
-
-</script>
+        <script>
+            $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+   });
+   
+   const text = document.getElementById("text");
+   const prog = "The fear of being average keeps me up at night. Check out some of my work!";
+   let idx = 1;
+   
+   setInterval(writeText, 100);
+   
+   function writeText() {
+       text.innerText = prog.slice(0, idx)
+       
+       idx++;
+       
+       if(idx > prog.length){
+         idx = 1;
+       }
+   
+   }
+   
+   const floating_btn = document.querySelector('.floating-btn');
+   const close_btn = document.querySelector('.close-btn');
+   const social_panel_container = document.querySelector('.social-panel-container');
+   
+   floating_btn.addEventListener('click', () => {
+       social_panel_container.classList.toggle('visible')
+   });
+   
+   close_btn.addEventListener('click', () => {
+       social_panel_container.classList.remove('visible')
+   });
+   
+    </script>
 </div>
 </html>
