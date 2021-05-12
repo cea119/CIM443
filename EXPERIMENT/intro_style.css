@@ -28,3 +28,11 @@ img{
 h2{
     font-size: 20px;  
 }
+
+.topnav-right {
+    float: right;
+    padding: 17px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  }

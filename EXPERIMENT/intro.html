@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <script src="jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <link href="/Users/corinaazpurua/Documents/GitHub/CIM443/EXPERIMENT/intro_style.css" rel="stylesheet" type= "text/css">
     <title>my work</title>
 </head>
@@ -13,7 +15,17 @@
 <div class="sketchy">
     <img id= "name" src='https://i.postimg.cc/JnjmnGWj/Screen-Shot-2021-05-10-at-5-30-57-PM.png' alt='Screen-Shot-2021-05-10-at-5-30-57-PM'/>
 <body>
-    <h1>hi, it's nice to see ya!</h1>
+
+    <div class="topnav-right">
+        <a href="/Users/corinaazpurua/Documents/GitHub/CIM443/EXPERIMENT/mywork.html">My Work</a>
+        <a href="/Users/corinaazpurua/Documents/GitHub/CIM443/EXPERIMENT/buki.html">BukiLove</a>
+        <a href="/Users/corinaazpurua/Documents/GitHub/CIM443/EXPERIMENT/myresume.html">My Resume</a>
+      </div>
+
+
+    <div class="content">
+        <h1 id="text">Starting...</h1>
+</div>
    
     <p>Strategic and creative student currently enrolled in a B.S. in Advertising and Interactive Media 
         with a minor in Psychology at the University of Miami. 
@@ -24,4 +36,30 @@
 
          <h2>Check out some of my stuff!</h2>
 </body>
+
+<script>
+    $(window).on("load",function(){
+$(".loader-wrapper").fadeOut("slow");
+});
+
+const text = document.getElementById("text");
+const prog = "hi, it's nice to see ya!";
+let idx = 1;
+
+setInterval(writeText, 100);
+
+function writeText() {
+text.innerText = prog.slice(0, idx)
+
+idx++;
+
+if(idx > prog.length){
+ idx = 1;
+}
+
+}
+
+
+</script>
+</div>
 </html>
