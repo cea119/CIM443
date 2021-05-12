@@ -1,0 +1,54 @@
+body{
+    background:white;
+    padding: 2rem;
+    font-family: "Muli", sans-serif;
+    size: 20pt; 
+    color: black;
+}
+
+#name{
+    text-align: left; 
+    height:60px; 
+    padding: 0em; 
+}
+
+a:link {
+    color: #c8cee8;
+    text-decoration: none;
+  }
+
+  a:visited { 
+    text-decoration: none; 
+    color: black ; 
+   }
+
+  a:active {
+    text-decoration: none;
+  }
+
+  #name{
+    text-align: left; 
+    height:60px; 
+    padding: 0em; 
+}
+
+
+.topnav-right {
+    float: right;
+    padding: 17px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  }
+
+  .content{
+      color: #c0e8d8;
+  }
+
+#mock{
+    width:650px;
+    height:450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}

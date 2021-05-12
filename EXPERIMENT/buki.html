@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="./buki.css" rel="stylesheet" type= "text/css">
+    <title>buki</title>
+</head>
+
+<body>
+    <div class="sketchy">
+        <a href='./intro.html' target='_blank'> <img id= "name" src='./assets/myname.png' alt='Screen-Shot-2021-05-10-at-5-30-57-PM'/> </a>
+    <body>
+
+    <div class="topnav-right">
+        <a href="./mywork.html">My Work // </a>
+        <a href="https://azpuruacorina.wixsite.com/myportfolio/resume-1">My Resume // </a>
+        <a href="./buki.html">BukiLove  </a>
+      </div>
+
+    <div class="content">
+        <h1 id="text">Starting...</h1>
+</div>
+
+<img id="mock" src='./assets/mock.png' alt='mock'/>
+
+<p>
+    <b>What is Buki Love?</b>  Bukilove is a , cool, soulful and ethereal experience. We make hand-crafted jewlery. 
+    <br>
+    <br>
+   <b> How did Buki Love come to life? </b> My three best friends and I strive to of  to create and embody our crazy adventures. During this quarantine, we realized that we all have been through significant  changes in the way we lived our everyday lives. Instead of complaining, we chose to see this difficult time as a way to realize how beautiful and fragile life actually is. 
+    
+    <br>
+    <br>
+    
+     We are always trying to reach our best selves. This is how Bukilove starts; we want to create and share the moments that as friends have made us closer and looked life in a different perspective.
+     <br>
+     <br>
+    Always approaching life as it comes; going with the flow. Our constant goal in life has always been to be there for each other (high and lows), get out of the comfort zone, embark in new adventures and making memories together. We hope you get to make some new memories with us too :)
+    
+<br>
+<br>
+    
+<b> Our best sellers. </b> On August 2020,  We introduced our innovative mask chains. Our goal is to give style to your masks, make them easier to wear and efficient. Most importantly, we want to reduce the pollution of many misplaced masks around our community.
+    
+    <br>
+    ​<br>
+    
+    <b>What do I do? </b> Aside from product production, I am the main designer creating posts for our Instagram @buki.love. Check it out!
+    
+    ​
+
+
+</p>
+  
+</body>
+
+<script>
+    $(window).on("load",function(){
+$(".loader-wrapper").fadeOut("slow");
+});
+
+const text = document.getElementById("text");
+const prog = "what is buki?";
+let idx = 1;
+
+setInterval(writeText, 100);
+
+function writeText() {
+text.innerText = prog.slice(0, idx)
+
+idx++;
+
+if(idx > prog.length){
+ idx = 1;
+}
+
+}
+
+
+</script>
