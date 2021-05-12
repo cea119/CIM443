@@ -228,3 +228,7 @@ body{
  .social{
    font-size: 10px;
  }   
+
+ .work{
+  align-items: center;
+ }

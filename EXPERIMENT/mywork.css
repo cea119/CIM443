@@ -1,0 +1,50 @@
+body{
+    background:white;
+    padding: 2rem;
+    font-family: "Muli", sans-serif;
+    size: 20pt; 
+    margin-left: 300px;
+    margin-right: 300px; 
+    color: black;
+}
+
+a:link {
+    color: #c8cee8;
+    text-decoration: none;
+  }
+
+  a:visited { 
+    text-decoration: none; 
+    color: black ; 
+   }
+
+  a:active {
+    text-decoration: none;
+  }
+
+  #name{
+    text-align: left; 
+    height:60px; 
+    padding: 0em; 
+}
+
+
+.topnav-right {
+    float: right;
+    padding: 17px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  }
+
+  .content{
+      color: #c0e8d8;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+      ". . .";
+  }
